@@ -1,10 +1,11 @@
 import { expect, it } from "vitest";
 
 const createCache = () => {
-  const cache = {};
+  const cache: Record<string, string> = {};
 
   const add = (id: string, value: string) => {
     cache[id] = value;
+    cache["1212123"] = "wzwwzwz111111";
   };
 
   const remove = (id: string) => {
